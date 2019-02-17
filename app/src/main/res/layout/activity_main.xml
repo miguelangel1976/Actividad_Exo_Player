@@ -1,25 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#f2ccff"
+    android:orientation="vertical"
+    >
 
 
     <!-- Se utiliza un PlayerView que ocupa toda la Pantalla para ver el Video Streaming.  -->
-
-    <com.google.android.exoplayer2.ui.PlayerView
-        android:id="@+id/player_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="475dp"
+        android:orientation="horizontal">
 
-    </com.google.android.exoplayer2.ui.PlayerView>
-    
-    
-    
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="6dp"
+            android:paddingBottom="5dp">
 
-    
-    
+        </com.google.android.exoplayer2.ui.PlayerView>
 
-</android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="4dp">
+
+        <ImageButton
+            android:id="@id/exo_prev"
+            style="@style/ExoMediaButton.Previous"
+
+
+            android:contentDescription="@string/exo_controls_previous_description" />
+
+
+        <ImageButton
+            android:id="@id/exo_play"
+            style="@style/ExoMediaButton.Play"
+            android:contentDescription="@string/exo_controls_play_description" />
+
+
+        <ImageButton
+            android:id="@id/exo_pause"
+            style="@style/ExoMediaButton.Pause"
+
+
+            android:contentDescription="@string/exo_controls_pause_description" />
+
+        <ImageButton
+            android:id="@id/exo_next"
+            style="@style/ExoMediaButton.Next"
+
+
+            android:contentDescription="@string/exo_controls_next_description" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

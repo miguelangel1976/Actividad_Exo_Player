@@ -15,20 +15,11 @@ import com.google.android.exoplayer2.util.Util;
 public class MainActivity extends AppCompatActivity {
 
 
-
-
-
-
-
-
-
     //Objeto: Para guardar la vista de tipo PlayerView.
     private PlayerView playerView; //Va a guardar el objeto de la Vista.
 
     //Objeto: El reproductor que va a ser una instancia de Exoplayer.
     private SimpleExoPlayer player; //Reproductor.
-
-
 
 
 
